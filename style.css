@@ -2,7 +2,6 @@ body {
     margin: 0;
 }
 .container1 {
-    margin: auto;
     width: 1349px;
     height: px;
     margin-top: 0;
@@ -48,7 +47,6 @@ body {
     margin-top: 20px;
 }
 .container2 {
-    margin: auto;
     background-color: rgb(0, 0, 0);
     width: 1349px;
     height: 316px;
@@ -93,7 +91,6 @@ body {
 }
 .container3 {
     background-color: rgb(255, 255, 255);
-    margin: auto;
     width: 1349px;
     height: 316px;
     top: 227px;
@@ -205,7 +202,6 @@ body {
     font-family: 'Poppins';
 }
 .container4 {
-    margin: auto;
     position: absolute;
     width: 1349px;
     height: 321px;
@@ -213,7 +209,6 @@ body {
     background-color: black;
 }
 .container5 {
-    margin: auto;
     position: absolute;
     width: 1349px;
     height: 229px;
@@ -245,7 +240,6 @@ a {
     margin-right: 105px;
 }
 .container6 {
-    margin: auto;
     position: absolute;
     width: 1349px;
     height: 20px;
