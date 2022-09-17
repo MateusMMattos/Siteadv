@@ -1,3 +1,9 @@
+:root{
+    --cor-fundo : #fff;
+    --cor-primaria : #fff;
+    --cor-hover : #fff;
+}
+
 body {
     margin: 0;
     max-width: 100%;
@@ -6,34 +12,57 @@ body {
     width: 1349px;
     height: 120px;
     background-color: rgb(0, 0, 0);
+}
+.dp-menu {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+}
+.dp-menu ul{
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    font-family: 'Poppins';
+    position: absolute;
+    width: 372px;
+}
+.dp-menu ul li {
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a {
+    color: #FCDB88;
+    text-decoration: none;
+    display: inline-block;
+    transition: background .4s;
+    padding: 0px 22px;
+}
+.dp-menu ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: #FCDB88;
+}
+/*Sub menu*/
+.dp-menu ul ul {
+    display: none;
+    left: 0;
+    position: absolute;
+}
+.dp-menu ul li:hover ul {
+    display: block;
+}
+.dp-menu ul ul {
+    width: 118px;
+    height: 50px;
+    margin-left: 0;
+}
+.dp-menu ul ul li a {
+    display: block;
 }
 #headerImg {
     width: 119px;
     height: 119px;
     margin-left: 75px;
     margin-top: 15px;
-}
-#menu ul {
-    list-style-type: none;
-    padding:0;
-    margin-right: 256px;
-}
-#menu li {
-    display: inline-block;
-    margin-top: 55px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    font-family: Poppins;
-}
-#menu a {
-    color: #FCDB88;
-    text-decoration: none;
-}
-#menu {
-    text-align: center;
 }
 #header2Img {
     position: absolute;
