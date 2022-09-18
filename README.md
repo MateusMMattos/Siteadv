@@ -6,4 +6,4 @@
 
 Caso queira visualizar o site segue o link abaixo:
 
-https://github.com/MateusMMattos/Siteadv.git
+https://MateusMMattos.github.io/Siteadv/
