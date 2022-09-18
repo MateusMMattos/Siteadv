@@ -3,7 +3,3 @@
 #Ainda não foi aplicado funções respansivas no site;
 
 #Quero deixar registrado que esse é o meu primeiro trabalho então pode ocorrer alguns bugs;
-
-Caso queira visualizar o site segue o link abaixo:
-
-https://MateusMMattos.github.io/Siteadv/
