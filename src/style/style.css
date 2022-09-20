@@ -216,14 +216,32 @@ a {
 }
 .container6 {
     position: absolute;
-    width: 100%;
+    width: 50%;
     height: 2.0rem;
     top: 130.0rem;
     background-color: #000000;
 }
 #final h1 {
+    width: 50%;
     font-family: 'Poppins';
     font-size: 1.3rem;
     margin-top: 0;
     color: white;
+}
+.container7 {
+    position: absolute;
+    width: 50%;
+    height: 2.0rem;
+    top: 130.0rem;
+    background-color: rgb(0, 0, 0);
+    margin-left: 50%;
+}
+#final h2 {
+    width: 50%;
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-left: 50%;
+    color: rgb(255, 0, 0);
+    text-align: center;
 }
