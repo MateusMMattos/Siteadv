@@ -1,0 +1,93 @@
+/* ------- Root ------- */
+
+:root {
+    font-size: 62.5%;
+    --color-link: #fcdb88;
+    --color-link-hover: #000000;
+    --font-size-link: 1.6rem;
+    --font-link: 'Poppins';
+}
+
+
+/* ------- Header ------- */
+header {
+    display: flex;
+    /* border: 3px solid red; */
+    justify-content: center;
+    background-color: #000000;
+    min-width: 735px;
+}
+
+header div#header {
+    width: 90%;
+    /* border: 3px solid rgb(4, 0, 255); */
+    display: flex;
+    justify-content: space-between;
+}
+
+header div#icone-header {
+    width: 10%;
+    /* border: 3px solid rgb(0, 255, 21); */
+    min-height: 120px;
+    display: flex;
+    min-width: 150px;
+    align-items: center;
+}
+
+header div#icone-header img {
+    width: 100%;
+    max-width: 150px;
+}
+
+header nav {
+    width: 40%;
+    /* border: 3px solid rgb(0, 255, 21); */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    min-width: 550px;
+    max-width: 550px;
+}
+
+header nav ul.nav {
+    /* border: 3px solid rgb(0, 195, 255); */
+    height: 50%;
+    width: 25%;
+}
+
+header nav ul.nav li div.container-link {
+    margin: 0 0 5px 0;
+    height: 20px;
+    display: flex;
+    max-width: 140px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+
+header nav ul.nav li a {
+    text-decoration: none;
+    font-family: var(--font-link);
+    font-size: var(--font-size-link);
+    color: var(--color-link);
+}
+
+
+header nav ul li div.container-link:hover {
+    background-color: var(--color-link);
+}
+
+header nav ul.nav li div.container-link:hover a {
+    color: var(--color-link-hover);
+    display: initial;
+}
+
+header nav ul.nav li ul.nav-inside {
+    display: none;
+}
+
+header nav ul.nav li:hover ul.nav-inside {
+    display: initial;
+}
+

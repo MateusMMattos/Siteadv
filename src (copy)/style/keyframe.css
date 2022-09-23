@@ -1,0 +1,4 @@
+@keyframes nav-inside {
+    from {top:0;}
+    to {top:10px;}
+}
