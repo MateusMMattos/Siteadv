@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: var(--min-width-vw);
+    /* border: 3px solid rgb(255, 0, 0); */
+}
+
+main article {
+    width: 90%;
+    height: 900px;
+    /* border: 3px solid rgb(4, 0, 255); */
+}
+
+main div#img-baner {
+    width: 100%;
+    /* border: 3px solid rgb(9, 255, 0); */
+    min-width: var(--min-width-vw);
+    margin-top: 150px;
+    background-image: url('../img/balance.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 0 150px;
+    background-size: contain;
+    position: relative;
+}
+
+main div#img-baner img {
+    width: 100%;
+    filter: opacity(0);
+}
+
+main div#img-baner div#conainer-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main div#img-baner div#conainer-card div#card-text {
+    height: 65%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 160px;
+    z-index: 1;
+} 
+
+main div#img-baner div#conainer-card div#card-text h1{
+    font-size: 4.8em;
+    font-family: 'Righteous';
+    color: #202020;
+}
+
+main div#img-baner div#conainer-card div#card-text button {
+    width: 20%;
+    height: 15%;
+    background: #03941A;
+    color: #ffffff;
+    border: none;
+    font-family: 'Righteous';
+    font-size: 1.6rem;
+    border-radius: 10px;
+    min-width: 230px;
+    max-width: 230px;
+    min-height: 45px;
+    max-height: 70px;
+}
+
+main div#img-baner div#conainer-card div#card-text button:hover {
+    background-color: #ffffff;
+    color: #03941A;
+}
+
+
+
+main div#img-baner::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: linear-gradient(0deg, #000000a0 0%, #ffffff00 100%);
+    position: absolute;
+
+}
+
