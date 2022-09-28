@@ -3,29 +3,27 @@ main {
     flex-direction: column;
     align-items: center;
     min-width: var(--min-width-vw);
-    /* border: 3px solid rgb(255, 0, 0); */
 }
 
 main article {
     width: 90%;
     height: 900px;
-    /* border: 3px solid rgb(4, 0, 255); */
 }
 
 main div#img-baner {
     width: 100%;
-    /* border: 3px solid rgb(9, 255, 0); */
     min-width: var(--min-width-vw);
     margin-top: 150px;
-    background-image: url('../img/balance.jpeg');
+    background-image: url('../img/balance.jpeg'), url('../img/balance.jpeg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0 150px;
+    background-position: 0 150px, 0 155px;
     background-size: contain;
     position: relative;
 }
 
 main div#img-baner img {
+    min-width: var(--min-width-vw);
     width: 100%;
     filter: opacity(0);
 }
@@ -51,32 +49,53 @@ main div#img-baner div#conainer-card div#card-text {
 } 
 
 main div#img-baner div#conainer-card div#card-text h1{
-    font-size: 4.8em;
-    font-family: 'Righteous';
+    font-size: max(4.2em, 4vw);
+    font-family: var(--font-baner);
     color: #202020;
 }
 
 main div#img-baner div#conainer-card div#card-text button {
-    width: 20%;
-    height: 15%;
-    background: #03941A;
-    color: #ffffff;
+    width: 30%;
+    max-width: 245px;
+    max-height: 50px;
+    min-width: 240px;
+    height: 25%;
     border: none;
-    font-family: 'Righteous';
-    font-size: 1.6rem;
-    border-radius: 10px;
-    min-width: 230px;
-    max-width: 230px;
-    min-height: 45px;
-    max-height: 70px;
+    font-family: var(--font-baner);
+    font-size: max(1.6rem, 1.2vw);
+    border-radius: 30px;
+    position: relative;
+    filter: drop-shadow(0px 0px 5px #000000);
+    transition: 2.5s;
 }
 
 main div#img-baner div#conainer-card div#card-text button:hover {
-    background-color: #ffffff;
-    color: #03941A;
+    color: #ffffff;
+    transition: 3.5s;
+    filter: drop-shadow(0px 0px 5px #15ff00);
+
+}
+
+main div#img-baner div#conainer-card div#card-text button::after {
+    content: "";
+    width: 20%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    top: 0px;
+    right: 0px;
+    background: url('../img/whatsapp.svg') #00a336 right 12px center no-repeat;
+    z-index: -1;
+    transition: all 2s ease-in-out;
 }
 
 
+main div#img-baner div#conainer-card div#card-text button:hover::after{
+    width: 100%;
+    background-image: url('../img/whatsapp2.svg');
+    transition: all 2s ease-in-out;
+}
 
 main div#img-baner::before {
     content: "";
@@ -85,6 +104,5 @@ main div#img-baner::before {
     display: block;
     background-image: linear-gradient(0deg, #000000a0 0%, #ffffff00 100%);
     position: absolute;
-
 }
 

@@ -2,24 +2,22 @@ header {
     display: flex;
     position: fixed;
     width: 100%;
-    /* border: 3px solid red; */
     justify-content: center;
     background-color: #202020;
     min-width: var(--min-width-vw);
     z-index: 100;
+    box-shadow: 0 0px 15px 5px #000000;
 }
 
 header div#header {
     width: 90%;
     min-width: 710px;
-    /* border: 3px solid rgb(4, 0, 255); */
     display: flex;
     justify-content: space-between;
 }
 
 header div#icone-header {
     width: 10%;
-    /* border: 3px solid rgb(0, 255, 21); */
     min-height: 120px;
     display: flex;
     min-width: var(--size-header);
@@ -33,52 +31,40 @@ header div#icone-header img {
 
 header nav {
     width: 40%;
-    /* border: 3px solid rgb(0, 255, 21); */
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end;
+    align-items: center;
     min-width: 550px;
-    max-width: 550px;
 }
 
 header nav ul.nav {
-    /* border: 3px solid rgb(0, 195, 255); */
-    height: 50%;
     width: 25%;
 }
 
 header nav ul.nav li div.container-link {
-    margin: 0 0 5px 0;
-    height: 20px;
+    height: 25px;
     display: flex;
-    max-width: 140px;
     align-items: center;
-    justify-content: center;
     border-radius: 5px;
+    transition: .5s;
 }
 
 header nav ul.nav li a {
     text-decoration: none;
     font-family: var(--font-link);
-    font-size: var(--font-size-link);
+    font-size: max(1.6rem,1vw);
     color: var(--color-link);
     width: 100%;
     text-align: center;
+    transition: .5s;
 }
 
 header nav ul li div.container-link:hover {
     background-color: var(--color-link);
+    transition: 1s;
 }
 
 header nav ul.nav li div.container-link:hover a {
     color: var(--color-link-hover);
-    display: initial;
-}
-
-header nav ul.nav li ul.nav-inside {
-    display: none;
-}
-
-header nav ul.nav li:hover ul.nav-inside {
-    display: initial;
+    transition: .5s;
 }
