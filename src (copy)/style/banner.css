@@ -5,11 +5,6 @@ main {
     min-width: var(--min-width-vw);
 }
 
-main article {
-    width: 90%;
-    height: 900px;
-}
-
 main div#img-baner {
     width: 100%;
     min-width: var(--min-width-vw);
@@ -28,7 +23,7 @@ main div#img-baner img {
     filter: opacity(0);
 }
 
-main div#img-baner div#conainer-card {
+main div#img-baner div#container-banner {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -37,65 +32,15 @@ main div#img-baner div#conainer-card {
     align-items: center;
 }
 
-main div#img-baner div#conainer-card div#card-text {
+main div#img-baner div#container-banner div#card-banner {
     height: 65%;
     width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-right: 160px;
     z-index: 1;
 } 
-
-main div#img-baner div#conainer-card div#card-text h1{
-    font-size: max(4.2em, 4vw);
-    font-family: var(--font-baner);
-    color: #202020;
-}
-
-main div#img-baner div#conainer-card div#card-text button {
-    width: 30%;
-    max-width: 245px;
-    max-height: 50px;
-    min-width: 240px;
-    height: 25%;
-    border: none;
-    font-family: var(--font-baner);
-    font-size: max(1.6rem, 1.2vw);
-    border-radius: 30px;
-    position: relative;
-    filter: drop-shadow(0px 0px 5px #000000);
-    transition: 2.5s;
-}
-
-main div#img-baner div#conainer-card div#card-text button:hover {
-    color: #ffffff;
-    transition: 3.5s;
-    filter: drop-shadow(0px 0px 5px #15ff00);
-
-}
-
-main div#img-baner div#conainer-card div#card-text button::after {
-    content: "";
-    width: 20%;
-    height: 100%;
-    display: block;
-    position: absolute;
-    border-radius: 30px;
-    top: 0px;
-    right: 0px;
-    background: url('../img/whatsapp.svg') #00a336 right 12px center no-repeat;
-    z-index: -1;
-    transition: all 2s ease-in-out;
-}
-
-
-main div#img-baner div#conainer-card div#card-text button:hover::after{
-    width: 100%;
-    background-image: url('../img/whatsapp2.svg');
-    transition: all 2s ease-in-out;
-}
 
 main div#img-baner::before {
     content: "";
@@ -105,4 +50,56 @@ main div#img-baner::before {
     background-image: linear-gradient(0deg, #000000a0 0%, #ffffff00 100%);
     position: absolute;
 }
+
+main div#img-baner div#container-banner div#card-banner h2{
+    font-size: clamp(4rem, 4vw, 9rem);
+    font-family: var(--font-baner);
+    color: #202020;
+}
+
+main div#img-baner div#container-banner div#card-banner button {
+    width: 35%;
+    max-width: 245px;
+    padding: 6px 0;
+    border: none;
+    font-family: var(--font-baner);
+    font-size: clamp(1.6rem,2vw,2.5rem);
+    border-radius: 30px;
+    position: relative;
+    filter: drop-shadow(0px 0px 5px #000000);
+    transition: all 1s ease-in-out;
+}
+
+main div#img-baner div#container-banner div#card-banner button:hover {
+    color: #ffffff;
+    filter: drop-shadow(0px 0px 5px #15ff00);
+}
+
+main div#img-baner div#container-banner div#card-banner button::before {
+    content: "";
+    width: 17%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    top: 0px;
+    right: 0px;
+    background-image: url('../img/whatsapp.svg');
+    background-size: clamp(1.6rem,2vw,2.5rem);
+    background-position: center right 8px;
+    background-color: #00a336;
+    background-repeat: no-repeat;
+    z-index: -1;
+    transition: all 1s ease-in-out;
+}
+
+
+main div#img-baner div#container-banner div#card-banner button:hover::before{
+    width: 100%;
+    background-image: url('../img/whatsapp2.svg');
+    background-position: center right 8px;
+}
+
+
+
 
