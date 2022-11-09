@@ -41,7 +41,10 @@ main div#img-baner div#container-banner div#card-banner {
     justify-content: space-evenly;
     z-index: 1;
 } 
-
+main div#card-banner a {
+    text-decoration: none;
+    color: black;
+}
 main div#img-baner::before {
     content: "";
     width: 100%;
@@ -70,7 +73,7 @@ main div#img-baner div#container-banner div#card-banner button {
     transition: all 1s ease-in-out;
 }
 
-main div#img-baner div#container-banner div#card-banner button:hover {
+main div#img-baner div#container-banner div#card-banner button a:hover {
     color: #ffffff;
     filter: drop-shadow(0px 0px 5px #15ff00);
 }
