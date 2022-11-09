@@ -15,6 +15,6 @@
 </ul>
 <h2>Integrantes</h2>
 <p>
-    O site teve o desing inicial foi feito por mim e aperfeiçoado pelo
+    O site teve o designer inicial foi feito por mim e aperfeiçoado pelo
     <a href="https://github.com/Flavio-Nassim-Bittar-Filho">Flavio Nassim Bittar Filho.</a><br>
 </p>
