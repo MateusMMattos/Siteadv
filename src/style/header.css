@@ -1,0 +1,71 @@
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    background-color: #202020;
+    min-width: var(--min-width-vw);
+    z-index: 100;
+    box-shadow: 0 0px 15px 5px #000000;
+}
+
+header div#header {
+    width: 90%;
+    min-width: 710px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div#icone-header {
+    width: 10%;
+    min-height: 120px;
+    display: flex;
+    min-width: var(--size-header);
+    max-width: var(--size-header);
+    align-items: center;
+}
+
+header div#icone-header img {
+    width: 100%;
+}
+
+header nav {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 900px;
+    min-width: 550px;
+}
+
+header nav ul.nav {
+    width: 25%;
+}
+
+header nav ul.nav li div.container-link {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+header nav ul.nav li a {
+    text-decoration: none;
+    font-family: var(--font-link);
+    font-size: clamp(1.6rem,1.2vw,2rem);
+    color: var(--color-link);
+    width: 100%;
+    text-align: center;
+    padding: 7px 0;
+    transition: .5s;
+}
+
+header nav ul li div.container-link:hover {
+    background-color: var(--color-link);
+    transition: 1s;
+}
+
+header nav ul.nav li div.container-link:hover a {
+    color: var(--color-link-hover);
+    transition: .5s;
+}
