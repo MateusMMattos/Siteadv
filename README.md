@@ -1,6 +1,6 @@
 <h1 align="center"><a href="https://flavio-nassim-bittar-filho.github.io/SADV/">Site Advocacia</a></h1> 
 <p>
-    Objetivo é criar um site que atenda um escritorio de advocacia usando apenas HTML e CSS; Poderá ser adicionado JAVASCRITP caso o cliente solicite. 
+    Objetivo é criar um site que atenda um escritorio de advocacia usando apenas HTML e CSS; Poderá ser adicionado JAVASCRIPT caso o cliente solicite. 
 </p>
 <h2>Tecnologias</h2>
 <ul>
